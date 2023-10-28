@@ -1,0 +1,23 @@
+/* Your styles go here */
+@import url("bootstrap/dist/css/bootstrap.min.css");
+@import url("bootstrap-icons/font/bootstrap-icons.css");
+
+.top {
+  border: 5px solid orange;
+  padding: 1 rem;
+  height: 75vh;
+  background-color: red;
+  background-image: url(../images/pattern.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.middle {
+  border: 5px solid orange;
+  padding: 1 rem;
+  height: 75vh;
+  margin-top: 1rem;
+  background: url(https:.//images.unsplash.com/photo) center / cover no-repeat
+    fixed red;
+}

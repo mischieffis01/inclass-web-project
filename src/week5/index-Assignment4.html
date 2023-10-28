@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Assignment 4" />
+    <title>Assignment 04 - Landing page layout</title>
+    <style>
+      *,
+      ::after,
+      ::before {
+        box-sizing: inherit;
+        margin: 0 0 10px 0;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      h5.top-h5 {
+        list-style: none;
+        padding-left: 0;
+        float: left;
+        padding-right: 10px;
+        color: gray;
+        vertical-align: middle;
+      }
+      .Five {
+        color: black;
+      }
+      nav > ul {
+        list-style: none;
+        padding-left: 0;
+        float: left;
+      }
+      nav li {
+        display: inline;
+        color: salmon;
+        padding: 0.5rem;
+      }
+      .pull-right {
+        float: right;
+      }
+      .pull-right :nth-child(2) {
+        border-bottom: 2px solid salmon;
+        padding-bottom: 2px;
+      }
+      .top-nav {
+        background-color: rgb(222, 211, 211);
+        line-height: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      button.top-button {
+        float: left;
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        margin: 0.5rem;
+        background-color: salmon;
+        color: white;
+        text-align: center;
+        box-shadow: none;
+      }
+      .youtube-table-cells {
+        display: table;
+        border-spacing: 1rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+      }
+      .youtube-table-cells .top-p,
+      .youtube-table-cells .youtube-bottom {
+        display: table-cell;
+        width: 20%;
+        height: 100%;
+        text-align: left;
+        padding: 5px;
+      }
+      .youtube-bottom {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+      }
+
+      .youtube-bottom iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      h3 {
+        padding: 0;
+        margin: 0;
+        border-top: 2px solid rgb(222, 211, 211);
+        padding-top: 5px;
+      }
+      p {
+        color: rgb(192, 182, 182);
+      }
+      main {
+        padding: 0% 10%;
+      }
+      .pic-table-cells {
+        display: table;
+        border-spacing: 1rem;
+      }
+      .pic-table-cells .col {
+        display: table-cell;
+        width: 20%;
+        overflow: hidden;
+        border: 2px solid rgb(222, 211, 211);
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+      }
+      .pic-table-cells .col > h4,
+      p {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      button.button-two {
+        display: block;
+        margin: 0 auto;
+
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: salmon;
+        color: white;
+        text-align: center;
+        box-shadow: none;
+      }
+      .bottom-nav {
+        display: table;
+        margin: 0 auto;
+        background-color: grey;
+        line-height: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-spacing: 6rem 0;
+      }
+      .bottom-nav .rows {
+        display: table-cell;
+      }
+      .bottom-nav > ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .bottom-nav li {
+        display: block;
+        color: salmon;
+        padding: 0.2rem;
+      }
+      .bottom-h5 {
+        color: white;
+        text-align: right;
+        padding-right: 1.5rem;
+      }
+      .last-nav {
+        float: left;
+        padding-left: 10rem;
+        padding-top: 1rem;
+      }
+      .last-nav > ul > li {
+        list-style: none;
+        display: inline;
+        color: salmon;
+        padding-left: 3rem;
+      }
+      .end {
+        float: right;
+        padding-right: 10rem;
+        padding-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="clearfix top-nav">
+      <h5 class="top-h5">Utah Mighty <span class="Five">FIVE</span></h5>
+      <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+        <li>Five</li>
+      </ul>
+      <ul class="pull-right">
+        <li>Account</li>
+        <li>Login</li>
+      </ul>
+    </nav>
+    <main>
+      <section class="youtube-table-cells">
+        <div class="top-p">
+          <h1>Close Your Eyes and Open Your Mind</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            ipsum sapiente eos molestias corporis sequi cum suscipit maxime sit,
+            quisquam dolores harum voluptatum delectus porro aspernatur, aut ea
+            animi nihil.
+          </p>
+
+          <button class="top-button">Take a Tour</button>
+          <button class="top-button">Start a free trial</button>
+        </div>
+        <div class="youtube-bottom">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/iKJ-TuDl8h0?si=06l0yUFx_3GkfX67"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <h3>What are they?</h3>
+      <section class="pic-table-cells">
+        <div class="col">
+          <img
+            src="https://images.unsplash.com/photo-1460302293840-dc1a23a7b226?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            alt="canyon"
+          />
+          <h4>Bryce Canyon National Park</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            aliquam hic iste vero dolores, nostrum accusantium nam
+            necessitatibus minima natus officia est veniam exercitationem facere
+            quis dolorum reprehenderit cupiditate ullam? Molestiae nam eligendi
+            ullam corrupti nulla. Aliquam aperiam
+          </p>
+        </div>
+        <div class="col">
+          <img
+            src="https://images.unsplash.com/photo-1443632864897-14973fa006cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            alt="zion"
+          />
+          <h4>Zion National Park</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam,
+            aspernatur, corrupti voluptates sapiente id quae deleniti
+            perspiciatis sed dolor nisi maiores rem illum minima harum ipsum
+            magnam omnis, porro quos! Dolore est perferendis explicabo. Deleniti
+            perferendis voluptates fugit cum molestiae consequuntur, neque quae
+            laborum minima dolorum possimus
+          </p>
+        </div>
+        <div class="col">
+          <img
+            src="https://images.unsplash.com/photo-1605999212475-d958ebac5e57?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1463&q=80"
+            alt="arches"
+          />
+          <h4>Arches National Park</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+            architecto ipsam atque ipsum accusamus, optio molestiae dolore natus
+            eum, hic alias. Facere ratione vel quam, reprehenderit quae quod
+            cumque ullam. Fugiat voluptatum sed, cupiditate doloremque illo
+            saepe placeat sint illum officia aliquid doloribus dignissimos
+            excepturi quod vel maiores fuga dolorum inventore neque qui
+            voluptatem? Vero molestiae aut accusantium saepe repellat? Lorem
+            ipsum dolor sit, amet consectetur adipisicing elit. Ipsum alias
+            corrupti dolores odio expedita nobis dolor, deserunt voluptates
+            inventore porro non. Repellat rerum quaerat numquam odit, quisquam
+            ab quis tempore.
+          </p>
+        </div>
+      </section>
+      <div>
+        <button class="button-two">Remaining two</button>
+      </div>
+    </main>
+    <section class="clearfix bottom-nav">
+      <div class="rows">
+        <h5 class="bottom-h5">Offices</h5>
+        <ul>
+          <li>One</li>
+          <li>Two</li>
+          <li>Three</li>
+          <li>Four</li>
+        </ul>
+      </div>
+      <div class="rows">
+        <h5 class="bottom-h5">Links</h5>
+        <ul>
+          <li>One</li>
+          <li>Two</li>
+          <li>Three</li>
+          <li>Four</li>
+        </ul>
+      </div>
+      <div class="rows">
+        <h5 class="bottom-h5">Contact</h5>
+        <ul>
+          <li>Twitter</li>
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>Pintrest</li>
+        </ul>
+      </div>
+      <div class="rows">
+        <h5 class="bottom-h5">Locations</h5>
+        <ul>
+          <li>One</li>
+          <li>Two</li>
+          <li>Three</li>
+          <li>Four</li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <div class="last-nav">
+        <ul>
+          <li>Legal</li>
+          <li>Partner</li>
+          <li>Explore</li>
+        </ul>
+      </div>
+      <div class="end">&copy; All rights reserved</div>
+    </footer>
+  </body>
+</html>

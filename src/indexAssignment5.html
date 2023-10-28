@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Project Starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="Assignment 5" />
+
+    <style>
+      /* styles go here */
+      @import url("bootstrap/dist/css/bootstrap.min.css");
+      @import url("bootstrap-icons/font/bootstrap-icons.css");
+
+      body {
+        background-color: white;
+        color: rgb(48, 47, 47);
+        padding: 5px;
+        border: 5px solid white;
+        width: 80%;
+        margin: 0 auto 1rem;
+        text-align: center;
+        display: flex;
+      }
+      span {
+        color: #9d9797;
+      }
+      .name {
+        float: left;
+        color: black;
+      }
+      h3 {
+        color: #808080;
+      }
+      /*mobile view */
+      @media all and (max-width: 500px) {
+        .search {
+          display: none;
+        }
+        .right-content {
+          display: none;
+        }
+        .top-nav {
+          display: none;
+        }
+
+        img {
+          border-radius: 1rem;
+          display: flex;
+          flex-flow: row nowrap;
+        }
+        .footer {
+          display: none;
+        }
+        footer {
+          text-align: center;
+        }
+        .end {
+          float: none;
+          padding-left: 30%;
+        }
+        .top-button {
+          display: none;
+        }
+
+        body {
+          display: flex;
+          flex-flow: column wrap;
+        }
+        .content {
+          flex-direction: column;
+          flex-wrap: wrap;
+        }
+        .left-content {
+          display: flex;
+          flex-flow: column wrap;
+        }
+        .top-content {
+          display: flex;
+          flex-flow: column wrap;
+        }
+        .bottom-content {
+          display: flex;
+          flex-flow: column wrap;
+        }
+      }
+      /* desktop view */
+      @media all and (min-width: 500px) {
+        div.top {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          line-height: 30px;
+        }
+
+        .search {
+          width: 250px;
+          height: 35px;
+          padding: 10px;
+          border: 1px solid #ccc;
+          margin-bottom: 10px;
+          float: right;
+        }
+        .search input {
+          width: 100%;
+          padding: 10px;
+          border: 0;
+          font-size: 14px;
+          background-color: #eeeeee;
+          border-radius: 15px;
+          text-align: center;
+        }
+
+        .top-nav > ul {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          padding: 0.5rem 20% 0.5rem 20%;
+          list-style: none;
+          background-color: #eeeeee;
+          margin-top: 1rem;
+          color: salmon;
+        }
+        .content {
+          display: flex;
+          flex-flow: row nowrap;
+          margin: 5px 10px 5px 5px;
+          text-align: left;
+        }
+        .left-content {
+          display: flex;
+          flex-flow: column nowrap;
+          width: 60%;
+          justify-content: flex-start;
+        }
+        .right-content {
+          flex-flow: column nowrap;
+          margin: 1rem 5% 1rem 5%;
+          width: 30%;
+          background-color: #eeeeee;
+          border-radius: 1rem;
+          height: 700px;
+          padding: 2rem 1rem;
+        }
+        .top-content {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: flex-start;
+        }
+
+        .bottom-content {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: flex-start;
+          border-top: 1px solid #bab7b7;
+        }
+
+        .left-img {
+          border-radius: 1rem;
+          margin: 0px;
+          width: 200px;
+          height: auto;
+          object-fit: contain;
+          padding: 10px;
+        }
+        img {
+          margin: 0px;
+          width: 200px;
+          height: auto;
+          object-fit: contain;
+          padding: 10px;
+        }
+        button {
+          display: block;
+          margin: 0 auto;
+          width: 150px;
+          height: 35px;
+          border-radius: 5px;
+          background-color: salmon;
+          color: white;
+          text-align: center;
+          box-shadow: none;
+          float: left;
+        }
+        footer {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          background-color: #808080;
+          color: white;
+          align-items: center;
+          padding: 1rem 1rem 1rem 0.5rem;
+          height: 3rem;
+          margin-top: 1rem;
+        }
+        .footer {
+          float: left;
+        }
+        .end {
+          float: right;
+        }
+        .footer > ul {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          list-style: none;
+          margin-top: 1rem;
+        }
+        .footer > ul > li {
+          padding-right: 1rem;
+        }
+        body {
+          flex-flow: column nowrap;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Your HTML goes here -->
+    <div class="top">
+      <h3 class="name">Pauline Morse</h3>
+      <h6 class="search"><input type="text" placeholder="Type to search" /></h6>
+    </div>
+
+    <div class="top-nav">
+      <ul>
+        <li>Home</li>
+        <li>Recent posts</li>
+        <li>Old posts</li>
+        <li>Contact us</li>
+        <li>About us</li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="left-content">
+        <div class="top-content">
+          <img
+            class="left-img"
+            src="https://images.unsplash.com/photo-1501761095094-94d36f57edbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1365&q=80"
+            alt="Waterfall"
+          />
+          <div class="top1">
+            <header>
+              <h3>First post with image</h3>
+              <h6>
+                <span> By Adam Smith, Jan 1 2021</span>
+              </h6>
+            </header>
+            <article>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla fuga error fugit doloremque accusamus a
+              corporis similique quidem in! Veniam eaque similique reprehenderit laboriosam quasi tempora exercitationem
+              voluptatum veritatis est.
+            </article>
+            <br />
+            <button class="top-button">Read More</button>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <img
+            class="left-img"
+            src="https://images.unsplash.com/photo-1495298132357-1bc89b451194?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1060&q=80"
+            alt="Waterfall"
+          />
+          <div class="bottom1">
+            <header>
+              <h3>Second post with image</h3>
+              <h6>
+                <span> By John Doe, Jan 1 2021</span>
+              </h6>
+            </header>
+            <article>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla fuga error fugit doloremque accusamus a
+              corporis similique quidem in! Veniam eaque similique.
+            </article>
+            <br />
+            <button class="top-button">Read More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-content">
+        <h3>Secondary content here</h3>
+        <img
+          src="https://images.unsplash.com/photo-1495298132357-1bc89b451194?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1060&q=80"
+          alt="Waterfall"
+        />
+        <article>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere officia natus ipsa harum vel, deserunt
+          impedit excepturi doloremque, odit laudantium beatae quae eos voluptatum voluptatibus. Perferendis reiciendis
+          numquam saepe possimus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique laudantium
+          consequuntur accusamus provident, itaque sed ab amet tenetur dignissimos qui, eligendi a veniam excepturi rem?
+          Similique doloremque optio voluptatem veritatis?
+        </article>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>YouTube</li>
+        </ul>
+      </div>
+      <div class="end">&copy; All rights reserved</div>
+    </footer>
+
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
+</html>

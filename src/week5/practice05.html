@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Practice Activity 05" />
+    <title>Practice05</title>
+    <style>
+      *, ::after, ::before {
+        box-sizing: inherit;
+      }
+      img {
+        width: 40%;
+        padding: 5px;
+        float: left;
+      }
+     
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table; 
+        
+      }
+      h3 {
+        list-style: none;
+        padding-left: 0;
+        float: left;
+        padding-right: 10px;
+      }
+      nav > ul {
+        list-style: none;
+        padding-left: 0;
+        float: left;
+        
+      }
+      nav li {
+        display: inline;
+        color: salmon;
+      
+      }
+      .pull-right {
+        float: right;
+      }
+      .table-cells {
+        display: table;
+        padding-bottom: 2rem;
+      }
+      .table-cells .col-1, .table-cells .col-2, .table-cells .col-3 {
+        display: table-cell;
+      }
+      .col-1, .col-2, .col-3 {
+        padding: 10px;
+      }
+      .col-1, .col-3 {
+        width: 20%; 
+        background-color: #7d7878;
+        color: white;
+        
+      }
+      .col-2{
+        width: 60%;
+        background-color: #000;
+        color: white;
+      }
+      footer{
+        border-top: 2px solid rgb(175, 170, 170);
+        padding: 10px;
+      
+      }
+      .name {
+        float: left;
+      
+      }
+      .end {
+        float: right;
+      }
+      .circle {
+        float: left;
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+        margin: .5rem;
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+      .vcircle {
+        display: table;
+        border-spacing: 1rem;
+      }
+      .vcircle .circle {
+        float: none;
+        display: table-cell;
+        vertical-align: middle;
+      }
+      span{
+        color: rgb(242, 124, 171);
+      }
+.top-article {
+  border-top: 2px solid rgb(175, 170, 170);
+}
+    </style>
+  </head>
+
+  <body>
+    <nav class="clearfix">
+      <h3>Floated menus:</h3>
+      <ul>
+        <li>One</li>
+        <li>Two</li>
+      </ul>
+      <ul class="pull-right">
+        <li>Three</li>
+        <li>Four</li>
+      </ul>
+    </nav>
+    <div class="top-article">
+      <h2><span> &lt;Article 1&gt;:</span> Wrapping text around an image</h2>
+      <p class="with-img"><img src="https://images.unsplash.com/photo-1600432154586-27a70e8acbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80" alt="City">
+    <h2>A secondary heading</h2>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non fugiat facere nihil labore nulla? Harum exercitationem architecto eum, cum dignissimos ea vel incidunt voluptates neque repellat? Ut a vitae neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dicta, voluptates consequuntur harum odit, hic quae voluptas porro accusamus repudiandae aspernatur atque dolor amet ratione ipsum praesentium sequi nihil itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ducimus odio doloremque tempore aliquid minima consequuntur eum, eos aliquam debitis eveniet itaque ipsa adipisci neque blanditiis a voluptatem commodi natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, tempore! Accusantium vero facere obcaecati animi sint alias corrupti voluptas tenetur deleniti ullam, et officia. Voluptatem ut saepe velit sed eaque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex a adipisci fuga voluptate cum odio libero illo, aperiam eum repellendus deleniti, impedit enim unde dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, tempore ducimus ipsa minima reprehenderit facilis illo eum obcaecati itaque deleniti rem iusto excepturi veniam quam commodi vel numquam dolor voluptas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nisi culpa eaque perspiciatis, esse cum, laborum quo distinctio voluptatem quis, ullam dignissimos possimus rerum debitis asperiores consectetur vitae temporibus quae?</p> </div>
+    <article><h2><span> &lt;Article 2&gt;:</span> Centering text vertically</h2>
+      <div class="clearfix vcircle">
+      <div class="circle">Selectors</div>
+      <div class="circle">Inheritance</div>
+      <div class="circle">Cascade</div>
+      <div class="circle">Specificity</div>
+    </div>
+  </article>
+    <h2><span>&lt;Article 3&gt;:</span> Equal-height columns</h2>
+      <section class="table-cells">
+    <div class="col-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sequi dolore tenetur, perferendis architecto recusandae molestias distinctio iste officia eius magnam blanditiis, debitis omnis consequuntur fugit. Esse dolore numquam eius.</div>
+  <div class="col-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi exercitationem corrupti quam, voluptate harum numquam ut? Nobis eum quia excepturi temporibus qui. Doloremque debitis eaque quibusdam nobis, inventore provident magnam!
+  Veniam, enim omnis? Ab libero repellendus nesciunt a quam commodi enim quis, excepturi corrupti rem adipisci repudiandae assumenda magnam quia possimus asperiores facere aspernatur, eos neque harum tempora, nostrum nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis delectus iste harum voluptatem velit laborum quia sed eaque labore. Minima, tempore ex? Placeat dolores neque iure praesentium illum, porro ratione?
+  Totam impedit dolor quisquam ea facilis veniam nulla eius vitae itaque! Atque incidunt officiis veniam rem doloremque deserunt eum unde quas laudantium, ipsam optio beatae facere, maiores, omnis consequuntur! Tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla possimus modi illum quidem quia ipsum doloribus ipsa repellat. Voluptatum dolor expedita error porro! Officiis beatae facere sint accusantium commodi!
+  Quod quia omnis, esse inventore delectus earum molestias fugiat! Quasi harum sequi voluptatum explicabo similique delectus sint minus laboriosam quod sed, assumenda nulla quisquam autem natus error ipsum, placeat blanditiis?</div>
+<div class="col-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea ipsa porro quis repellendus non minus doloribus aliquam explicabo, corporis similique eligendi doloremque nostrum, illo deleniti nihil sapiente sed id perferendis!</div></section>
+<footer>
+  <div class="name">Pauline Morse </div>
+  <div class="end">&copy; All rights reserved</div>
+</footer>
+  </body>
+</html>

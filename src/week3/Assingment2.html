@@ -1,0 +1,227 @@
+<!--Pauline Morse
+Assignment 02 
+CS 2350-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Believe in the Power of your own thoughts"
+    />
+    <title>Be Thoughtful</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Internal CSS */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 400;
+        background-color: white;
+        margin: 0 20%;
+      }
+
+      .top {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: Oswald, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      nav ol.top-selection {
+        list-style: none;
+        text-align: center;
+        padding-left: 0;
+        border-top: 2px solid darkgray;
+        border-bottom: 2px solid darkgray;
+        padding: 10px 0px;
+      }
+
+      nav ol.top-selection li {
+        display: inline;
+        padding: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: skyblue;
+      }
+      a:hover {
+        color: darkgrey;
+      }
+      h1.main-title {
+        text-align: center;
+        font-weight: 700;
+        width: 100%;
+        padding: 0;
+        font-family: Oswald, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      h3 {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: Oswald, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+      section.First {
+        margin-right: 25%;
+        border-right: 2px solid darkgrey;
+        padding-right: 10px;
+      }
+      section.Second {
+        margin-left: 25%;
+        border-left: 2px solid darkgrey;
+        padding-left: 10px;
+      }
+      section.Third {
+        margin-right: 25%;
+        border-right: 2px solid darkgrey;
+        padding-right: 10px;
+      }
+      pre {
+        color: darkgray;
+      }
+      main {
+        border-bottom: 2px solid darkgray;
+        padding-bottom: 20px;
+      }
+      dt {
+        color: darkgray;
+      }
+      h6 {
+        color: darkgrey;
+        margin-top: 0;
+      }
+      span {
+        color: black;
+      }
+      footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h3 class="top">Be Thoughtful</h3></header>
+
+    <nav>
+      <ol class="top-selection">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Featured</a></li>
+        <li><a href="#">Archive</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact</a></li>
+      </ol>
+    </nav>
+    <main>
+      <header>
+        <h1 class="main-title">Believe in the power of your own thoughts</h1>
+      </header>
+
+      <section class="First">
+        <header>
+          <h3>Using A Single Paragraph</h3>
+          <h6>
+            <span> By</span> Jane Doe <a href="#">(jdoe@example.com)</a>
+            <span>on </span>14 May 2099
+          </h6>
+        </header>
+        <article>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla fuga
+          error fugit doloremque accusamus a corporis similique quidem in!
+          Veniam eaque similique reprehenderit laboriosam quasi tempora
+          exercitationem voluptatum veritatis est.
+        </article>
+      </section>
+
+      <section class="Second">
+        <header>
+          <h3>Nesting Lists of Different Kinds</h3>
+          <h6>
+            By Mark Smith <a href="#">(mssmith@example.com)</a> on 14 April 2009
+          </h6>
+        </header>
+        <article>
+          Start with an unordered list:
+          <ul>
+            <li>Here is the first list item by itself</li>
+            <li>
+              Here is a list item with a nested ordered list:
+              <ol>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                  voluptate nihil quibusdam reprehenderit, enim itaque
+                  consequuntur officiis iure adipisci.
+                </li>
+                <li>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Ullam sed qui totam fugiat eius, culpa deleniti.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veniam quis deserunt unde quidem.
+                </li>
+              </ol>
+            </li>
+            <li>Another list by itself</li>
+            <li>
+              An item list with a nested description list:
+              <dl>
+                <dt>Dream</dt>
+                <dd>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </dd>
+                <dt>Ideas</dt>
+                <dd>Hic sint ducimus saepe repellat tenetur.</dd>
+                <dt>Thoughts</dt>
+                <dd>Numquam ullam ipsa architecto perferendis.</dd>
+              </dl>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="Third">
+        <header>
+          <h3>With Blockquotes and Code Blocks</h3>
+          <h6>
+            <span>By </span>Adam Smith<a href="#">(adams@example.com)</a>
+            <span>on </span>23 Feburary 2099
+          </h6>
+        </header>
+        <article>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+          inventore minima, excepturi explicabo reiciendis, magnam at labore
+          suscipit perspiciatis qui quidem vero? Minima voluptate et odit ea
+          ullam ipsam perspiciatis?
+          <br />
+          <blockquote>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            neque molestias aliquid minima illo nihil fuga praesentium libero
+            quos corrupti amet ut commodi, incidunt voluptas deleniti quia
+            itaque repellat minus?
+          </blockquote>
+          <br />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt rerum
+          fuga neque, eaque libero vero nemo mollitia possimus labore voluptates
+          quisquam obcaecati unde vel repellendus quis quam voluptatum
+          laboriosam asperiores!
+          <pre>
+            <code>
+                let x, y, z; //Declare 3 variables
+                x = 5;       // Assign the value 5 to x
+                y = 6;       // Assign the value 6 to y
+                z = x + y;   // Assign the sum of x and y to z
+
+                document.getElementByID("dd").innerHTML = "z = " + z;
+            </code>
+        </pre>
+        </article>
+      </section>
+    </main>
+    <footer><div>&copy; All rights resevered - 2022</div></footer>
+  </body>
+</html>
